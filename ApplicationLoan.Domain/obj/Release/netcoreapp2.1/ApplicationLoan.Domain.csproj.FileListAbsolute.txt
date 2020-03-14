@@ -6,4 +6,3 @@ D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netc
 D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.AssemblyInfo.cs
 D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.dll
 D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.pdb
-D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.csprojAssemblyReference.cache

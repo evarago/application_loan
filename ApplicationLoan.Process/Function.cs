@@ -127,7 +127,7 @@ namespace ApplicationLoan.Process
                 var vlCommitment = Math.Round(loanProcessObjectRequest.LoanRequest.VlIncome * iCommitment, 2);
                 var vlFree = Math.Round(loanProcessObjectRequest.LoanRequest.VlIncome - vlCommitment, 2);
 
-                vlTerm = await CalcTermAsync(loanProcessObjectRequest.LoanRequest.Terms, loanProcessObjectRequest.LoanRequest.VlAmout, vlFree, iScore);
+                vlTerm = await CalcTermAsync(loanProcessObjectRequest, loanProcessObjectRequest.LoanRequest.VlAmout, vlFree, iScore);
 
                 if (vlTerm <= 0)
                     loanProcessObject.RefusedPolicy = (string.IsNullOrEmpty(loanProcessObjectRequest.RefusedPolicy) ? "commitment" : loanProcessObjectRequest.RefusedPolicy += ", commitment");
@@ -138,6 +138,8 @@ namespace ApplicationLoan.Process
                     loanProcessObject.Result = LoanProcess.approved;
 
                 loanProcessObject.IdTerms = loanProcessObjectRequest.LoanRequest.Terms.Id;
+                loanProcessObject.Terms = loanProcessObjectRequest.LoanRequest.Terms;
+
                 loanProcessObject.IdStatus = Status.Completed;
                 loanProcessObject.LoanRequest = loanProcessObjectRequest.LoanRequest;
 
@@ -159,29 +161,10 @@ namespace ApplicationLoan.Process
             }
         }
 
-        private async Task<decimal> RecalcTermAsync(Int32 iTerm, decimal vlAmout, decimal vlFree)
-        {
-            var lstTerms = await termsService.GetByFilterAsync(d => d.Term != iTerm);
-
-            decimal vlTermRecalc = 0;
-
-            foreach (var d in lstTerms.OrderBy(d => d.Term))
-            {
-                vlTermRecalc = Math.Round(vlAmout / d.Term, 2);
-
-                if (vlTermRecalc < vlFree)
-                    break;
-                else
-                    vlTermRecalc = 0;
-            }
-
-            return vlTermRecalc;
-        }
-
-        private async Task<decimal> CalcTermAsync(Terms terms, decimal vlAmout, decimal vlFree, int iScore)
+        private async Task<decimal> CalcTermAsync(LoanProcess loanProcess, decimal vlAmout, decimal vlFree, int iScore)
         {
             var lstInterestRate = await interestRateService.GetByFilterAsync(d => d.Id == d.Id);
-            var lstTerms = await termsService.GetByFilterAsync(d => d.Term >= terms.Term);
+            var lstTerms = await termsService.GetByFilterAsync(d => d.Term >= loanProcess.LoanRequest.Terms.Term);
 
             decimal vlTermRecalc = 0;
 
@@ -195,7 +178,12 @@ namespace ApplicationLoan.Process
                     vlTermRecalc += Math.Round(vlTermRecalc * (objInterestRate.VlInterest / 100), 2);
 
                     if (vlTermRecalc < vlFree)
+                    {
+                        loanProcess.LoanRequest.Terms.Id = d.Id;
+                        loanProcess.LoanRequest.Terms = d;
+
                         break;
+                    }
                     else
                         vlTermRecalc = 0;
                 }
