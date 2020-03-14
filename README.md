@@ -1,19 +1,19 @@
-# API GraphQL ASPNetCore 
+# API REST .NetCore 
 
 Principais abordagens
 
- DDD (Domain Driven Design) hexagonal architecture
- Swagger
- Version
- OAuth
- AWS Lamdba
- AWS SQS
- Dependency Injection
- Entity Framework Repository
- TDD (Unit Tests)
- Visual Studio 2017
- Logs
- Docker
+ - DDD (Domain Driven Design) hexagonal architecture
+ - Swagger
+ - Version
+ - OAuth
+ - AWS Lamdba
+ - AWS SQS
+ - Dependency Injection
+ - Entity Framework Repository
+ - TDD (Unit Tests)
+ - Visual Studio 2017
+ - Logs
+ - Docker
 
 ## Ambiente de Desenvolvimento
 
