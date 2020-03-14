@@ -1,0 +1,12 @@
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\bin\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.deps.json
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\bin\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.dll
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\bin\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.pdb
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.csprojAssemblyReference.cache
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.csproj.CoreCompileInputs.cache
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.AssemblyInfoInputs.cache
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.AssemblyInfo.cs
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.dll
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.pdb
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\bin\Debug\netcoreapp2.1\ApplicationLoan.Domain.dll
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\bin\Debug\netcoreapp2.1\ApplicationLoan.Domain.pdb
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Infra.Data\obj\Debug\netcoreapp2.1\ApplicationLoan.Infra.Data.csproj.CopyComplete

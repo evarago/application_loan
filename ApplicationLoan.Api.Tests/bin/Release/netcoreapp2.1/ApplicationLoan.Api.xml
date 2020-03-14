@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApplicationLoan.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ApplicationLoan.Api.Controllers.LoanController">
+            <summary>
+            Loan Demo API
+            </summary>
+        </member>
+        <member name="M:ApplicationLoan.Api.Controllers.LoanController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ApplicationLoan.Api.Controllers.LoanController.Post(ApplicationLoan.Api.ViewModel.LoanRequestViewModel)">
+            <summary>
+            POST for Request
+            </summary>
+            <param name="requestObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApplicationLoan.Api.Controllers.LoanController.Get(System.String)">
+            <summary>
+            GET for query process status
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApplicationLoan.Api.LambdaEntryPoint">
+            <summary>
+            This class extends from APIGatewayProxyFunction which contains the method FunctionHandlerAsync which is the 
+            actual Lambda function entry point. The Lambda handler field should be set to
+            
+            ApplicationLoan.Api::ApplicationLoan.Api.LambdaEntryPoint::FunctionHandlerAsync
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ApplicationLoan.Api.LambdaEntryPoint.Init(Microsoft.AspNetCore.Hosting.IWebHostBuilder)" -->
+        <member name="T:ApplicationLoan.Api.LocalEntryPoint">
+            <summary>
+            The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
+            </summary>
+        </member>
+        <member name="T:ApplicationLoan.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApplicationLoan.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:ApplicationLoan.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApplicationLoan.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ApplicationLoan.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:ApplicationLoan.Api.ViewModel.ErrorViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.ErrorViewModel.Erros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApplicationLoan.Api.ViewModel.LoanRequestViewModel">
+            <summary>
+            POST - Loan Request Model
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.name">
+            <summary>
+            Customer name
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.cpf">
+            <summary>
+            Customer CPF
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.birthDate">
+            <summary>
+            Customer BirthDate
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.amount">
+            <summary>
+            Request Amount
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.terms">
+            <summary>
+            Terms (6, 9, 12)
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanRequestViewModel.income">
+            <summary>
+            Customer income
+            </summary>
+        </member>
+        <member name="T:ApplicationLoan.Api.ViewModel.LoanResponseViewModel">
+            <summary>
+            GET - Loan Response Model
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.id">
+            <summary>
+            Identify request
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.status">
+            <summary>
+            Status for request process
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.result">
+            <summary>
+            Description about result process
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.refused_policy">
+            <summary>
+            Description about the policy
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.amount">
+            <summary>
+            Request Amout
+            </summary>
+        </member>
+        <member name="P:ApplicationLoan.Api.ViewModel.LoanResponseViewModel.terms">
+            <summary>
+            Terms (6, 9, 12)
+            </summary>
+        </member>
+    </members>
+</doc>

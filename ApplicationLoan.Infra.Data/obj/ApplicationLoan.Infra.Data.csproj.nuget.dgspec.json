@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Infra.Data\\ApplicationLoan.Infra.Data.csproj": {}
+  },
+  "projects": {
+    "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\ApplicationLoan.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\ApplicationLoan.Domain.csproj",
+        "projectName": "ApplicationLoan.Domain",
+        "projectPath": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\ApplicationLoan.Domain.csproj",
+        "packagesPath": "C:\\Users\\everton.varago\\.nuget\\packages\\",
+        "outputPath": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\everton.varago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gringottsbank.pkgs.visualstudio.com/_packaging/Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "rhel.7.2-x64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Infra.Data\\ApplicationLoan.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Infra.Data\\ApplicationLoan.Infra.Data.csproj",
+        "projectName": "ApplicationLoan.Infra.Data",
+        "projectPath": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Infra.Data\\ApplicationLoan.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\everton.varago\\.nuget\\packages\\",
+        "outputPath": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\everton.varago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gringottsbank.pkgs.visualstudio.com/_packaging/Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\ApplicationLoan.Domain.csproj": {
+                "projectPath": "D:\\Everton\\Treinamentos\\application_loan\\ApplicationLoan.Domain\\ApplicationLoan.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "rhel.7.2-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

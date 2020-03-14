@@ -1,0 +1,9 @@
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\bin\Release\netcoreapp2.1\ApplicationLoan.Domain.deps.json
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\bin\Release\netcoreapp2.1\ApplicationLoan.Domain.dll
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\bin\Release\netcoreapp2.1\ApplicationLoan.Domain.pdb
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.csproj.CoreCompileInputs.cache
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.AssemblyInfoInputs.cache
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.AssemblyInfo.cs
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.dll
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.pdb
+D:\Everton\Treinamentos\application_loan\ApplicationLoan.Domain\obj\Release\netcoreapp2.1\ApplicationLoan.Domain.csprojAssemblyReference.cache
